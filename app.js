@@ -9,7 +9,7 @@ app.use("/public", express.static(__dirname + "/public"));
 app.set("view engine", "ejs");
 
 app.get('/', function(req, res) {
-    res.render('services');
+    res.render('main');
 });
 app.get('/home', function(req, res) {
     res.redirect("/");
