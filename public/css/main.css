@@ -1,0 +1,238 @@
+:root {
+    --color-schema1: rgb(245, 158, 66);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+::selection {
+    color: rgb(0, 0, 0);
+    background: var(--color-schema1);
+}
+
+.nav-bar {
+    background-color: rgb(255, 255, 255);
+    padding: 0 200px;
+}
+
+.nav-element,
+.nav-logo {
+    list-style: none;
+    display: inline;
+}
+
+.nav-element a {
+    text-decoration: none;
+    color: black;
+    float: right;
+    padding: 40px 20px;
+    font-size: 20px;
+}
+
+.nav-logo img {
+    height: 100px;
+    width: 200px;
+    float: none;
+}
+
+
+/* Landing page */
+
+.landing-page {
+    position: relative;
+}
+
+.landing-page img {
+    height: 90vh;
+    width: 100%;
+}
+
+.sedih-image {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+}
+
+.hero-text {
+    position: absolute;
+    color: white;
+    top: 20%;
+    left: 15%;
+}
+
+.hero-text .hero-name {
+    font-size: 7vh;
+}
+
+.hero-text .hero-des {
+    font-size: 5vh;
+    text-align: justify;
+}
+
+.hero-text .underline {
+    background-color: var(--color-schema1);
+    height: 1vh;
+    width: 50vh;
+    display: inline-block;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 25%;
+    left: 15%;
+}
+
+.buttons a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 20px;
+}
+
+.buttons .hire-me {
+    border: 3px solid var(--color-schema1);
+    border-radius: 25px;
+}
+
+.buttons .protofolio {
+    background-color: var(--color-schema1);
+    border-radius: 25px;
+}
+
+.buttons .hire-me,
+.buttons .protofolio {
+    font-size: 3vh;
+}
+
+
+/* content */
+
+.contentbox,
+.faq {
+    margin: 0 23vh;
+}
+
+.contentbox .underline {
+    background-color: var(--color-schema1);
+    height: 0.6vh;
+    margin-bottom: 3vh;
+    width: 100vh;
+    display: inline-block;
+}
+
+.content p {
+    font-size: 2.5vh;
+    font-stretch: ultra-expanded;
+}
+
+
+/* Foot-nav */
+
+.footer-nav {
+    background-color: var(--color-schema1);
+    height: 8vh;
+    text-align: center;
+    padding: 2vh;
+    color: white;
+    font-size: 2vh;
+}
+
+
+/* contact form */
+
+.form-container .header-text {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.form-container .des-text {
+    font-size: 25px;
+    text-align: justify;
+}
+
+.form-container .contact {
+    font-size: 20px;
+    padding-top: 40px;
+}
+
+.form-container .underline {
+    width: 20vh;
+    display: block;
+    height: 1vh;
+    background-color: var(--color-schema1);
+    margin-bottom: 3vh;
+}
+
+.form-container {
+    padding: 40px;
+    !important
+}
+
+input[type=text],
+input[type=email],
+input[type=subject] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px dotted rgb(189, 184, 184);
+    background-color: rgb(245, 239, 239);
+    border-radius: 4px;
+}
+
+input[type=submit] {
+    width: 30%;
+    background-color: var(--color-schema1);
+    color: white;
+    padding: 10px 40px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: left;
+    clear: both;
+    font-size: 20px;
+}
+
+label {
+    display: block;
+    font-size: 20px;
+    float: left;
+}
+
+textarea {
+    width: 100%;
+    resize: vertical;
+    background-color: rgb(245, 239, 239);
+    border-radius: 2px;
+}
+
+
+/* Faq */
+
+.details {
+    box-shadow: 20px 40px 50px #d4d3d3;
+    !important
+}
+
+details>summary {
+    padding: 40px;
+    background-color: #ffffff;
+    border-bottom: solid 1px rgb(238, 234, 234);
+    cursor: cell;
+}
+
+details>p {
+    background-color: #ffffff;
+    padding: 4px;
+    margin: 0;
+}
+
+.faq .details {
+    margin-top: 4vh;
+}
