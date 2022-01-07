@@ -17,6 +17,7 @@
 .nav-bar {
     background-color: rgb(255, 255, 255);
     padding: 0 200px;
+    border-bottom: 1px dotted grey;
 }
 
 .nav-element,
@@ -209,6 +210,9 @@ input[type=submit] {
 /*  Mobile Phones Portrait  */
 
 @media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .landing-page {
+        display: none;
+    }
     .form-container .header-text {
         font-weight: bold;
         font-size: 25px;
