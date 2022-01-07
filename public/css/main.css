@@ -130,19 +130,14 @@
 }
 
 
-/* Foot-nav */
-
-.footer-nav {
-    background-color: var(--color-schema1);
-    height: 8vh;
-    text-align: center;
-    padding: 2vh;
-    color: white;
-    font-size: 2vh;
-}
-
-
 /* contact form */
+
+.form-container {
+    padding: 40px;
+    !important width: 75%;
+    margin: 10vh 25vh;
+    padding: 10vh;
+}
 
 .form-container .header-text {
     font-weight: bold;
@@ -167,11 +162,6 @@
     margin-bottom: 3vh;
 }
 
-.form-container {
-    padding: 40px;
-    !important
-}
-
 input[type=text],
 input[type=email],
 input[type=subject] {
@@ -183,6 +173,13 @@ input[type=subject] {
     border: 1px dotted rgb(189, 184, 184);
     background-color: rgb(245, 239, 239);
     border-radius: 4px;
+}
+
+textarea {
+    width: 100%;
+    resize: vertical;
+    background-color: rgb(245, 239, 239);
+    border-radius: 2px;
 }
 
 input[type=submit] {
@@ -199,18 +196,116 @@ input[type=submit] {
     font-size: 20px;
 }
 
-label {
-    display: block;
-    font-size: 20px;
-    float: left;
+.contact-header-text .header {
+    font-weight: bold;
+    font-size: 60px;
 }
 
-textarea {
-    width: 100%;
-    resize: vertical;
-    background-color: rgb(245, 239, 239);
-    border-radius: 2px;
+.contact-header-text .paragraph {
+    font-size: 30px;
 }
+
+
+/*  Mobile Phones Portrait  */
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .form-container .header-text {
+        font-weight: bold;
+        font-size: 25px;
+        padding-left: 15px;
+    }
+    .form-container .des-text {
+        font-size: 15px;
+    }
+    .form-container {
+        /* padding: 4px; */
+        margin: 0vh 0vh;
+        padding: 7vh;
+    }
+    .form-container .contact {
+        font-size: 15px;
+        padding-top: 20px;
+    }
+    input[type=text],
+    input[type=email],
+    input[type=subject] {
+        padding: 10px 5px;
+        margin: 2px 0;
+    }
+    input[type=submit] {
+        padding: 12px 10px;
+        margin: 2px 0;
+        border-radius: 2px;
+        font-size: 12px;
+    }
+    textarea {
+        border-radius: 2px;
+    }
+    .form-container .underline {
+        width: 18vh;
+        margin-left: 15px;
+        display: block;
+        height: 0.5vh;
+    }
+    .contact-header-text .header {
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .contact-header-text .paragraph {
+        font-size: 15px;
+    }
+}
+
+
+/* Mobile Phones Landscape */
+
+@media screen and (max-device-width: 640px) and (orientation: landscape) {
+    /* some CSS here */
+}
+
+
+/* Mobile Phones Portrait or Landscape  */
+
+
+/* @media screen and (max-device-width: 640px) {
+     some CSS here 
+} */
+
+
+/* #### iPhone 4+ Portrait or Landscape #### */
+
+@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+    /* some CSS here */
+}
+
+
+/* #### iPhone 5 Portrait or Landscape #### */
+
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+    /* some CSS here */
+}
+
+
+/* #### iPhone 6 and 6 plus Portrait or Landscape #### */
+
+@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {
+    /* some CSS here */
+}
+
+
+/* #### Tablets Portrait or Landscape #### */
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    /* some CSS here */
+}
+
+
+/*  Desktops  */
+
+
+/* @media screen and (min-width: 1024px) {
+    some CSS here 
+} */
 
 
 /* Faq */
@@ -235,4 +330,16 @@ details>p {
 
 .faq .details {
     margin-top: 4vh;
+}
+
+
+/* Foot-nav */
+
+.footer-nav {
+    background-color: var(--color-schema1);
+    height: 8vh;
+    text-align: center;
+    padding: 2vh;
+    color: white;
+    font-size: 2vh;
 }
