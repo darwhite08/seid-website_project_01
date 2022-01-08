@@ -37,7 +37,58 @@
 .nav-logo img {
     height: 100px;
     width: 200px;
-    float: none;
+}
+
+.nav-bar .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-bar .nav-element:not(:first-child) {
+        display: none;
+    }
+    .nav-bar .icon {
+        float: right;
+        display: inline-block;
+    }
+    .nav-logo img {
+        height: 50px;
+        width: 100px;
+        float: left;
+    }
+    .nav-bar {
+        padding: 0 3px;
+    }
+    .nav-bar .icon {
+        padding: 8px 10px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav-bar.responsive {
+        position: sticky;
+        top: 0%;
+        left: 0%;
+        height: 100vh;
+    }
+    .nav-bar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .nav-bar.responsive .nav-element {
+        float: none;
+        text-align: left;
+        display: block;
+        clear: both;
+        text-align: center;
+        padding-top: 10vh;
+    }
+    .nav-bar.responsive .nav-element a {
+        float: none;
+        padding: 20px;
+    }
 }
 
 
