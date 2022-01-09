@@ -91,6 +91,54 @@
     }
 }
 
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .nav-bar .nav-element:not(:first-child) {
+        display: none;
+    }
+    .nav-bar .icon {
+        float: right;
+        display: inline-block;
+    }
+    .nav-logo img {
+        height: 100px;
+        width: 200px;
+        float: left;
+    }
+    .nav-bar {
+        padding: 0 3px;
+    }
+    .nav-bar .icon {
+        padding: 8px 18px;
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .nav-bar.responsive {
+        position: sticky;
+        top: 0%;
+        left: 0%;
+        height: 100vh;
+    }
+    .nav-bar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .nav-bar.responsive .nav-element {
+        float: none;
+        text-align: left;
+        display: block;
+        clear: both;
+        text-align: center;
+        padding-top: 10vh;
+    }
+    .nav-bar.responsive .nav-element a {
+        float: none;
+        padding: 20px;
+    }
+}
+
 
 /* Landing page */
 
@@ -160,6 +208,41 @@
     font-size: 3vh;
 }
 
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .landing-page {
+        position: relative;
+    }
+    .sedih-image {
+        right: 3%;
+    }
+    .hero-text {
+        top: 30%;
+        left: 10%;
+    }
+    .hero-text .hero-name {
+        font-size: 4vh;
+    }
+    .hero-text .hero-des {
+        font-size: 3vh;
+        text-align: justify;
+    }
+    .hero-text .underline {
+        height: 0.5vh;
+        width: 30vh;
+    }
+    .buttons {
+        left: 5%;
+        bottom: 20%;
+    }
+    .buttons a {
+        margin-right: 10px;
+    }
+    .buttons .hire-me,
+    .buttons .protofolio {
+        font-size: 1.5vh;
+    }
+}
+
 
 /* content */
 
@@ -179,6 +262,46 @@
 .content p {
     font-size: 2.5vh;
     font-stretch: ultra-expanded;
+}
+
+@media screen and (max-device-width: 600px) {
+    .contentbox {
+        margin: 10vh 5vh;
+    }
+    .contentbox .header {
+        font-size: 2vh;
+    }
+    .contentbox .underline {
+        height: 0.3vh;
+        margin-bottom: 3vh;
+        width: 20vh;
+        display: inline-block;
+    }
+    .content p {
+        font-size: 1.9vh;
+        font-stretch: ultra-expanded;
+        text-align: justify;
+    }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .contentbox {
+        margin: 10vh 5vh;
+    }
+    .contentbox .header {
+        font-size: 3vh;
+    }
+    .contentbox .underline {
+        height: 0.4vh;
+        margin-bottom: 3vh;
+        width: 60vh;
+        display: inline-block;
+    }
+    .content p {
+        font-size: 2.2vh;
+        font-stretch: ultra-expanded;
+        text-align: justify;
+    }
 }
 
 
@@ -260,7 +383,7 @@ input[type=submit] {
 
 /*  Mobile Phones Portrait  */
 
-@media screen and (max-device-width: 480px) and (orientation: portrait) {
+@media screen and (max-device-width: 600px) and (orientation: portrait) {
     .landing-page {
         display: none;
     }
@@ -311,56 +434,53 @@ input[type=submit] {
     }
 }
 
-
-/* Mobile Phones Landscape */
-
-@media screen and (max-device-width: 640px) and (orientation: landscape) {
-    /* some CSS here */
-}
-
-
-/* Mobile Phones Portrait or Landscape  */
-
-
-/* @media screen and (max-device-width: 640px) {
-     some CSS here 
-} */
-
-
-/* #### iPhone 4+ Portrait or Landscape #### */
-
-@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
-    /* some CSS here */
-}
-
-
-/* #### iPhone 5 Portrait or Landscape #### */
-
-@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
-    /* some CSS here */
-}
-
-
-/* #### iPhone 6 and 6 plus Portrait or Landscape #### */
-
-@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {
-    /* some CSS here */
-}
-
-
-/* #### Tablets Portrait or Landscape #### */
-
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    /* some CSS here */
+    .form-container .header-text {
+        font-size: 35px;
+        padding-left: 15px;
+    }
+    .form-container .des-text {
+        font-size: 25px;
+        margin-right: 7vh;
+    }
+    .form-container {
+        padding: 4px;
+        margin: 5vh 4vh;
+        padding: 7vh;
+    }
+    .form-container .contact {
+        font-size: 20px;
+        padding-top: 20px;
+    }
+    input[type=text],
+    input[type=email],
+    input[type=subject] {
+        padding: 10px 5px;
+        margin: 2px 0;
+    }
+    input[type=submit] {
+        padding: 12px 10px;
+        margin: 2px 0;
+        font-size: 15px;
+        width: 100px;
+    }
+    textarea {
+        border-radius: 2px;
+    }
+    .form-container .underline {
+        width: 18vh;
+        margin-left: 15px;
+        display: block;
+        height: 0.5vh;
+    }
+    .contact-header-text .header {
+        font-weight: bold;
+        font-size: 35px;
+    }
+    .contact-header-text .paragraph {
+        font-size: 20px;
+    }
 }
-
-
-/*  Desktops  */
-
-
-/* @media screen and (min-width: 1024px) {
-    some CSS here 
-} */
 
 
 /* Faq */
@@ -385,6 +505,38 @@ details>p {
 
 .faq .details {
     margin-top: 4vh;
+}
+
+@media screen and (max-device-width: 600px) {
+    .faq {
+        margin: 0 10px;
+    }
+    details>summary {
+        padding: 20px;
+        font-size: 15px;
+    }
+    details>p {
+        padding: 10px;
+    }
+    .faq .details {
+        margin-top: 2vh;
+    }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .faq {
+        margin: 0 20px;
+    }
+    details>summary {
+        padding: 20px;
+        font-size: 25px;
+    }
+    details>p {
+        padding: 20px;
+    }
+    .faq .details {
+        margin-top: 4vh;
+    }
 }
 
 
