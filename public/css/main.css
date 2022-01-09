@@ -322,6 +322,7 @@
 .form-container .des-text {
     font-size: 25px;
     text-align: justify;
+    margin-right: 10vh;
 }
 
 .form-container .contact {
