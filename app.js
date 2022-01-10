@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require("express");
 const bodyParser = require("body-parser")
 const ejs = require("ejs");
@@ -25,6 +26,15 @@ app.get('/about', function(req, res) { res.render('about'); });
 app.get('/services', function(req, res) { res.render("services"); });
 app.get('/portfolio', function(req, res) { res.render("portfolio"); });
 app.get('/contact', function(req, res) { res.render("contact"); });
-app.get('/admin', function(req, res) { res.sendFile(__dirname + "login.html") });
+app.get('/admin', function(req, res) { res.sendFile(__dirname + "\\login.html") });
+app.post('/login', function(req, res) {
+    let username = req.body.userName;
+    let password = req.body.password;
+    if (process.env.USER == username && process.env.PASS == password) {
+        res.sendFile(__dirname + "\\file.html");
+    } else {
+        res.send("wrong password");
+    }
+});
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
