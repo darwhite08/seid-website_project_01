@@ -319,17 +319,17 @@
 
 .form-container .header-text {
     font-weight: bold;
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .form-container .des-text {
-    font-size: 25px;
+    font-size: 20px;
     text-align: justify;
     margin-right: 10vh;
 }
 
 .form-container .contact {
-    font-size: 20px;
+    font-size: 18px;
     padding-top: 40px;
 }
 
@@ -372,16 +372,16 @@ input[type=submit] {
     cursor: pointer;
     float: left;
     clear: both;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .contact-header-text .header {
     font-weight: bold;
-    font-size: 60px;
+    font-size: 50px;
 }
 
 .contact-header-text .paragraph {
-    font-size: 30px;
+    font-size: 25px;
     color: var(--paragraph-schema);
 }
 
