@@ -106,7 +106,7 @@
       .pass input {
           width: 100%;
           height: 55px;
-          padding: 10 40px;
+          padding: 0px 40px;
       }
        ::placeholder {
           color: #9ca5b4;
@@ -127,6 +127,10 @@
           position: relative;
           bottom: 120px;
           font-size: 18px;
+      }
+      .user i,
+      .pass i {
+          top: 50%;
       }
   }
   
@@ -173,5 +177,9 @@
           position: relative;
           bottom: 120px;
           font-size: 18px;
+      }
+      .user i,
+      .pass i {
+          top: 50%;
       }
   }
