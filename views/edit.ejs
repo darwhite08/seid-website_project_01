@@ -1,0 +1,70 @@
+<%- include("login-header") -%>
+    <div class="editcontainer w3-mobile ">
+        <!-- Home page Edit text-->
+        <div class="/homepage">
+            <h1 class=" w3-leftbar w3-amber w3-padding-large w3-text-white w3-border-green ">Home Page Edit Text</h1>
+            <form class="w3-center" action="/homepage" method="POST">
+                <div class="text-1">
+                    <h2>Home page text section 1</h2>
+                    <label id="header">Header</label><br>
+                    <input type="text" name="header1" value=""><br>
+                    <labe>Paragraph</labe><br>
+                    <textarea name="hometext1" id="hometext" cols="30" rows="10" value="hello"></textarea>
+
+                </div>
+                <div class="text-2">
+                    <h2>Home page text section 2</h2>
+                    <label>Header</label><br>
+                    <input type="text" name="header2" value=""><br>
+                    <labe>Paragraph</labe><br>
+                    <textarea name="hometext2" id="hometext" cols="30" rows="10" value="hello"></textarea>
+                </div>
+                <button type="submit" class="w3-button w3-green w3-hover-green w3-hover-shadow">Submit</button>
+
+            </form>
+        </div>
+        <!-- About Section Edit text -->
+        <div class="">
+            <h1 class=" w3-leftbar w3-amber w3-padding-large w3-text-white w3-border-green ">About Section Edit Text</h1>
+            <form class="w3-center" action="/aboutsection" method="POST">
+                <div class="text-1">
+                    <h2>About Section text section 1</h2>
+                    <label>Header</label><br>
+                    <input type="text" name="header1" value=""><br>
+                    <labe>Paragraph</labe><br>
+                    <textarea name="hometext1" id="hometext" cols="30" rows="10" value="hello"></textarea>
+                </div>
+                <div class="text-2">
+                    <h2>About Section text section 2</h2>
+                    <label>Header</label><br>
+                    <input type="text" name="header2" value=""><br>
+                    <labe>Paragraph</labe><br>
+                    <textarea name="hometext2" id="hometext" cols="30" rows="10" value="hello"></textarea>
+                </div>
+                <div class="text-2">
+                    <h2>About Section text section 3</h2>
+                    <label>Header</label><br>
+                    <input type="text" name="header3" value=""><br>
+                    <labe>Paragraph</labe><br>
+                    <textarea name="hometext3" id="hometext" cols="30" rows="10" value="hello"></textarea>
+                </div>
+                <button type="submit" class="w3-button w3-green w3-hover-green w3-hover-shadow">Submit</button>
+
+            </form>
+        </div>
+        <div class="">
+            <h1 class=" w3-leftbar w3-amber w3-padding-large w3-text-white w3-border-green ">Protofolio section edit</h1>
+            <form class="w3-center" action="/protofolio" method="POST">
+                <div class="text-1 w3-margin-bottom">
+                    <h2>Protofolio section Edit</h2>
+                    <label>Image link</label><br>
+                    <input type="text" name="imgurl" value=""><br><br>
+
+                </div>
+                <button type="submit" class="w3-button w3-green w3-hover-green w3-hover-shadow">Submit</button>
+            </form>
+        </div>
+
+    </div>
+
+    <%- include("login-footer") -%>

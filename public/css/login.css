@@ -130,7 +130,7 @@
       }
       .user i,
       .pass i {
-          top: -50%;
+          top: 4.9vh;
       }
   }
   
@@ -180,6 +180,6 @@
       }
       .user i,
       .pass i {
-          top: -50%;
+          top: 4.9vh;
       }
   }

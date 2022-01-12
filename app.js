@@ -20,7 +20,20 @@ const userSchema = {
 
 const User = new mongoose.model("User", userSchema)
 
-app.get('/', function(req, res) { res.render("main"); });
+app.get('/', function(req, res) {
+    let header_one = " hello this is my world  okay";
+    let header_2 = " hello this is my world"
+    let paragraph_one = " hello this is my x world  okay";
+    let paragraph_two = " hello this is my <br>world"
+
+    res.render("main", {
+        header1: header_one,
+        header2: header_2,
+        paragraph1: paragraph_one,
+        paragraph2: paragraph_two
+    });
+
+});
 app.get('/home', function(req, res) { res.redirect("/"); });
 app.get('/about', function(req, res) { res.render('about'); });
 app.get('/services', function(req, res) { res.render("services"); });
@@ -28,15 +41,36 @@ app.get('/portfolio', function(req, res) { res.render("portfolio"); });
 app.get('/contact', function(req, res) { res.render("contact"); });
 app.get('/login', function(req, res) { res.render("\login") });
 app.get('/notfound', function(req, res) { res.redirect("/") });
-app.get('*', function(req, res) { res.render("not-found") });
 app.post('/login', function(req, res) {
-    let username = req.body.userName;
+    let username = req.body.username;
     let password = req.body.password;
     if (process.env.USER == username && process.env.PASS == password) {
-        res.sendFile(__dirname + "\\file.html");
+        res.render('edit');
     } else {
-        res.send("wrong password");
+        res.send("wrong password")
     }
 });
 
+app.post('/homepage', function(req, res) {
+    let text = req.body.firstheader;
+    let header_2 = req.body.header2;
+    let paragraph_1 = req.body.hometext1;
+    let paragraph_2 = req.body.hometext2;
+
+
+
+});
+app.post('/aboutsection', function(req, res) {
+    let header_1 = req.body.header1;
+    let header_2 = req.body.header2;
+    let header_3 = req.body.header2;
+    let paragraph_1 = req.body.hometext1;
+    let paragraph_2 = req.body.hometext2;
+    let paragraph_3 = req.body.hometext3;
+});
+app.post('/protofolio', function(req, res) {
+    let paragraph_3 = req.body.imgurl;
+
+});
+app.get('*', function(req, res) { res.render("not-found") });
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))

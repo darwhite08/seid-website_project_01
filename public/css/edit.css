@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.editcontainer {
+    background-color: white;
+}
+
+.text-1 h2,
+.text-2 h2 {
+    font-weight: bold;
+    clear: right;
+}
+
+.text-1 input[type=text],
+.text-2 input[type=text] {
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+}
+
+textarea {
+    width: 75%;
+    resize: vertical;
+    margin-top: 5vh;
+}

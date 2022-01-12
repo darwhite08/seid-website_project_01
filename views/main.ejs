@@ -7,7 +7,8 @@
             </div>
             <div class="hero-text">
                 <h1 class="hero-name">Hi, I am
-                    <bold>Seidk Bendaoud</bold>
+                    <bold>
+                        Seidk Bendaoud</bold>
                 </h1>
                 <span class="underline"></span>
                 <p class="hero-des">
@@ -24,50 +25,55 @@
         <div class="contentbox">
             <div>
                 <h2 class="header">
-                    <b>Lorem ipsum dolor sit amet  nemo debitis aliquid. Delectus!</b>
+                    <b><%= header1 %></b>
                 </h2>
                 <span class="underline"></span><br>
             </div>
-            <div class="content">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam eius non obcaecati omnis, natus illum hic eum culpa ea. Qui, maxime labore? Magni, illo dolorem adipisci omnis provident obcaecati est.
-                </p><br>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est possimus doloremque exercitationem dolorem corrupti autem adipisci fuga iusto aliquid dolorum, et aperiam quo dolor vitae deserunt molestiae ex provident blanditiis!
-                </p><br>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos voluptatem nostrum vero est, possimus nesciunt numquam sint qui non expedita incidunt officiis illum dolore at impedit consectetur, magnam dolorum fuga!
-                </p><br>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga excepturi optio itaque quos voluptates dignissimos magni sapiente corrupti amet accusantium ea laboriosam doloremque, eius explicabo necessitatibus cupiditate, eum, quidem voluptas.
-                </p>
+            <div class="content" id="content">
+                <p id="contentparagraph">
 
+                </p>
             </div>
 
 
+            <script>
+                let data = "<%= paragraph1 %>";
+                let newdata = data.split(" ")
 
+                const topDom = document.getElementById('content');
+                const childOfDom = document.getElementById('contentparagraph');
+
+
+
+                for (var i = 0; i < newdata.length; i++) {
+
+                    if (newdata[i] === "x") {
+                        var tag = document.createElement("p");
+                        var text = document.createTextNode(newdata[i].join(" "));
+                        tag.appendChild(text);
+                        var element = topDom;
+                        element.appendChild(tag);
+
+
+                    } else {
+                        childOfDom.innerText = newdata[i].join(" ");
+                    }
+                }
+            </script>
 
         </div>
         <div class="contentbox">
             <div>
                 <h2 class="header">
-                    <b>Lorem ipsum dolor sit amet  nemo debitis aliquid. Delectus!</b>
+                    <b><%= header2 %></b>
                 </h2>
                 <span class="underline"></span><br>
             </div>
             <div class="content">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam eius non obcaecati omnis, natus illum hic eum culpa ea. Qui, maxime labore? Magni, illo dolorem adipisci omnis provident obcaecati est.
-                </p><br>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est possimus doloremque exercitationem dolorem corrupti autem adipisci fuga iusto aliquid dolorum, et aperiam quo dolor vitae deserunt molestiae ex provident blanditiis!
-                </p><br>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos voluptatem nostrum vero est, possimus nesciunt numquam sint qui non expedita incidunt officiis illum dolore at impedit consectetur, magnam dolorum fuga!
-                </p><br>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga excepturi optio itaque quos voluptates dignissimos magni sapiente corrupti amet accusantium ea laboriosam doloremque, eius explicabo necessitatibus cupiditate, eum, quidem voluptas.
+                    <%= paragraph2 %>
                 </p>
+
 
             </div>
 
