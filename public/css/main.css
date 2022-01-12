@@ -1,12 +1,14 @@
 :root {
     --color-schema1: rgb(245, 158, 66);
+    --paragraph-schema: rgb(90, 90, 90);
+    --font-scehma: rgb(29, 28, 32);
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: poppins;
 }
 
 ::selection {
@@ -28,15 +30,15 @@
 
 .nav-element a {
     text-decoration: none;
-    color: black;
+    color: var(--font-scehma);
     float: right;
     padding: 40px 20px;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .nav-logo img {
     height: 100px;
-    width: 200px;
+    width: 150px;
 }
 
 .nav-bar .icon {
@@ -165,7 +167,7 @@
 }
 
 .hero-text .hero-name {
-    font-size: 7vh;
+    font-size: 5vh;
 }
 
 .hero-text .hero-des {
@@ -183,13 +185,13 @@
 .buttons {
     position: absolute;
     bottom: 25%;
-    left: 15%;
+    left: 14%;
 }
 
 .buttons a {
     text-decoration: none;
     color: white;
-    padding: 15px 30px;
+    padding: 14px 30px;
     margin-right: 20px;
 }
 
@@ -248,7 +250,7 @@
 
 .contentbox,
 .faq {
-    margin: 0 23vh;
+    margin: 6vh 23vh;
 }
 
 .contentbox .underline {
@@ -262,6 +264,7 @@
 .content p {
     font-size: 2.5vh;
     font-stretch: ultra-expanded;
+    color: var(--paragraph-schema);
 }
 
 @media screen and (max-device-width: 600px) {
@@ -362,7 +365,7 @@ input[type=submit] {
     width: 30%;
     background-color: var(--color-schema1);
     color: white;
-    padding: 10px 40px;
+    padding: 10px 10px;
     margin: 8px 0;
     border: none;
     border-radius: 5px;
@@ -379,6 +382,11 @@ input[type=submit] {
 
 .contact-header-text .paragraph {
     font-size: 30px;
+    color: var(--paragraph-schema);
+}
+
+::-webkit-input-placeholder {
+    padding: 2vh;
 }
 
 
@@ -496,12 +504,14 @@ details>summary {
     background-color: #ffffff;
     border-bottom: solid 1px rgb(238, 234, 234);
     cursor: cell;
+    color: var(--font-scehma);
 }
 
 details>p {
     background-color: #ffffff;
     padding: 4px;
     margin: 0;
+    color: var(--paragraph-schema);
 }
 
 .faq .details {

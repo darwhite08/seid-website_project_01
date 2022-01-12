@@ -26,7 +26,7 @@ app.get('/about', function(req, res) { res.render('about'); });
 app.get('/services', function(req, res) { res.render("services"); });
 app.get('/portfolio', function(req, res) { res.render("portfolio"); });
 app.get('/contact', function(req, res) { res.render("contact"); });
-app.get('/admin', function(req, res) { res.sendFile(__dirname + "\\login.html") });
+app.get('/login', function(req, res) { res.render("\login") });
 app.post('/login', function(req, res) {
     let username = req.body.userName;
     let password = req.body.password;
