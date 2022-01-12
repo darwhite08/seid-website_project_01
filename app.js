@@ -27,6 +27,8 @@ app.get('/services', function(req, res) { res.render("services"); });
 app.get('/portfolio', function(req, res) { res.render("portfolio"); });
 app.get('/contact', function(req, res) { res.render("contact"); });
 app.get('/login', function(req, res) { res.render("\login") });
+app.get('/notfound', function(req, res) { res.redirect("/") });
+app.get('*', function(req, res) { res.render("not-found") });
 app.post('/login', function(req, res) {
     let username = req.body.userName;
     let password = req.body.password;
